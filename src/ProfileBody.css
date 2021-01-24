@@ -1,0 +1,8 @@
+.profileBody{
+    margin-bottom: 30px;
+}
+.profileBody > p{
+    color: #646464;
+    font-size: 15px;
+    line-height: 20px;
+}

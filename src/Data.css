@@ -1,0 +1,69 @@
+.resume__slider>h1,
+.portfolio__slider>h1,
+.accordion.active>.profile__slider>h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    margin-left: 25px;
+}
+
+.accordion.active>.resume__slider>h1,
+.accordion.active>.portfolio__slider>h1,
+.accordion.active>.profile__slider>h1 {
+    color: white;
+}
+
+/************************************** Profile__Slider */
+
+.accordion__section > .accordion > .profile__slider {
+    width: 0px;     
+    transition: width 1s ease;
+}
+
+.accordion__section > .accordion > .profile__slider >h1 {
+    display: none;
+}
+
+.accordion__section > .accordion.active > .profile__slider {
+    display: flex;
+    background-color: #4ca5d0;
+ 
+    width: 115px;        
+    padding: 18.5px 25px 18.5px 0;
+
+    transition: width 1s ease;
+}
+
+.accordion__section > .accordion.active > .profile__slider >h1 {
+    display: block; 
+}
+
+/******************************************* Resume__Slider */
+.resume__slider,
+.portfolio__slider {
+    width: 0;
+    padding: 18.5px 0;
+
+    color: #646464;
+    transition: all 1s ease;
+
+    /* background-color: #6ca338; */
+}
+
+.accordion.active>.resume__slider,
+.accordion.active>.portfolio__slider {
+    width: fit-content;
+    transition: all 1s ease;
+    padding-right: 25px;
+}
+
+.accordion.active>.resume__slider {
+    background-color: rgb(108, 163, 56);
+}
+
+/******************************************* Portfolio__Slider */
+.accordion.active>.portfolio__slider {
+    background-color: rgb(255, 188, 56);
+
+}

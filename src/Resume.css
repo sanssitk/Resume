@@ -1,0 +1,146 @@
+.resume, .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    font-weight: 500;
+    margin-top: 15px;
+    color: gray;
+}
+
+
+/* left__content ***************************************/
+.left__content{
+    width: 65%;
+    }
+
+.employment__title{
+    background-color: #373737;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.employment__details{
+
+    display: flex;
+    justify-content: space-between;    
+
+    color: #646464;
+    margin-bottom: 20px;
+}
+
+.employment__details__headings{
+    flex: 1;
+    margin-left: 5px;    
+}
+.employment__details__headings > h4{
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.employment__details__company{
+    font-size: 14px;
+    font-weight: 400;    
+}
+
+.employment__details__heading__year{
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.employment__details__body{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 45px;
+    }
+
+.employment__details__body > p {    
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1rem;
+}    
+
+/* right__content ***************************************/
+.right__content{
+    font-size: 1rem;  
+    font-weight: 600;
+    text-transform: uppercase;
+   
+    color: black;
+    width: 30%;
+    /* margin-left: 30px;  */
+}
+
+
+/* .right__content{    
+    width: 100%; 
+} */
+
+.right__content > h1{
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: black;
+}
+
+.right__content > h4{
+    font-size: 0.6rem;
+    margin-bottom: 3px;
+    font-weight: 500;
+    color: gray;
+}
+
+/* Progress Bar */  
+  .progress-done {
+    font-size: 12px;
+    text-align: right;
+    margin-bottom: 10px;
+
+    /* background: linear-gradient(to right, #90dfff, #0f90cc); */
+    /* box-shadow: 0 1px 1px -2px #90dfff, 0 2px 5px #0f90cc; */
+    border-radius: 3px;
+    color: #fff;  
+    height: 0.8rem;
+    width: 0;
+    opacity: 0;
+    transition: width ease 2s;
+  }
+
+
+  /* donut--Chart */
+  .donut__chart{
+      width: 100%;
+      overflow: hidden;
+  }
+
+  .donut__chart > h1{
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: black;
+}
+
+.tui-pie-chart{
+    width: 100%;
+    margin-top: -50px;    
+}
+
+.tui-pie-chart > svg > rect{
+    fill: none;
+}
+    
+    
+.tui-chart-chartExportMenu-area, .tui-chart-tooltip-area, .tui-chart-series-custom-event-area, .tui-chart-chartExportMenu-button{
+    display: none;
+} 
+
+@media screen and (max-width: 900px) {
+    .resume, .left__content, .right__content{   
+      flex-direction: column-reverse;
+      width: 100%;
+    }
+  }
